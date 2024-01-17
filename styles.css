@@ -1,0 +1,82 @@
+:root{
+    --accent-color: #537891;
+}
+
+
+
+
+/* Global settings*/
+* {
+    background-color: #FCF3CA;
+}
+
+
+
+/* Global settings for lists*/
+ul {
+    list-style-type: none;
+}
+
+
+
+/* Settings for CTA button*/
+.cta{
+    background-color: var(--accent-color);
+    border-radius: 9px;
+    color: #fff;
+    cursor: pointer;
+    border: 3px solid var(--accent-color);
+    width: 231px;
+    height: 78px;
+    font-size: 35px;
+}
+.cta:hover{
+    color: #2f4866;
+    
+    background-color: transparent;
+}
+
+
+
+/*Settings for main header menu*/
+.menu-elements {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+}
+.menu-elements:hover {
+    color: var(--accent-color);
+}
+
+
+
+/* Global settings for the main headline*/
+h1 {
+    color: #fff;
+}
+ .accent {
+    color: #537891;
+}
+
+
+
+/*Settings for menu elements in the bottom of the title page*/
+.downmenu-elements {
+    background-color: var(--accent-color);
+    color: #000;
+}
+
+
+
+/*Global settings for the all pages' hedlines*/
+.section-headline {
+    color: #000;
+}
+
+
+/*Settings for the footer menu elements*/
+.footer-elements{
+    color: var(--accent-color);
+    font-weight: bold;
+    text-decoration: none;
+}
