@@ -14,7 +14,7 @@
             <div class="header-container">
                 <nav class="header-nav">
                     <a href="./index.html">
-                        <img class="logo-image" src="images/logo.png" alt="Ramenie logo header" width="165" height="70"/>
+                        <img class="logo-image" src="images/logo_footer.png" alt="Ramenie logo header" width="165" height="70"/>
                     </a>
                     <ul class="header-menu">
                         <li><a class="menu-elements" href="#advantages-section">Advantages</a></li=>
@@ -25,7 +25,7 @@
                     </ul>
                 </nav>
                 
-                <button class="cta" type="button">Order a call</button>
+                <button class="cta modal-btn-open" type="button">Order a call</button>
             </div>
             
         </div>
@@ -34,7 +34,7 @@
     <main>
         <section class="main-title-section">
             <div class="container">
-                <h1 class="main-title">Ramen<span>ie</spanlass=>
+                <h1 class="main-title">Ramen<span>ie</span>
                 </h1>
             </div>
         </section>
@@ -76,8 +76,12 @@
         </section>
         <section class="section" id="cheef-section">
             <div class="container">
-                <h2 class="cheefs-title section-headline centered">Our <span>ryori suru</spanlass=>
+                <h2 class="chef-title section-headline centered">
+                    
+                    Our best <br />
+                    <span >ryori suru</span>
                 </h2>
+                    
                 <ul class="chef-list">
                     <li class="chef-item">
                         <article class="chef-card">
@@ -120,9 +124,9 @@
             <div class="container">
                 <h2 class="ramens-title section-headline centered">Menu</h2>
                 <div class="ramens-container">
-                    <button class="carousel-button" type="button">
+                    <button class="carousel-button next" type="button">
                         <svg class="carousel-arrow" width="16" height="16">
-                            <use href="./images/symbol-defs.svg#icon-arrow-left"></use>
+                            <use href="./images/sprite.svg#icon-arrow-left"></use>
                         </svg>
                     </button>
                     <ul class="ramens-list">
@@ -173,7 +177,7 @@
                     </ul>
                     <button class="carousel-button" type="button">
                         <svg class="carousel-arrow" width="32" height="32">
-                            <use href="./images/symbol-defs.svg#icon-arrow-right"></use>
+                            <use href="./images/sprite.svg#icon-arrow-right"></use>
                         </svg>
                     </button>
                 </div>
@@ -187,7 +191,30 @@
                     <div class="find_us-form">
                         <h2 class="contact-title section-headline">Where are <span class="accent-headers">we</span> located?</h2>
                         <p>Fill out the form for us to contact you!</p>
-                        <!--form-->
+                        <form  name="contact-form" autocomplete="on" novalidate>
+
+                            <div class="form-field">
+                                <label class="form-label visually-hidden" for="user-name"></label>
+                                <input class="form-input" type="text" id="user-name" name="user-name" placeholder="Name">
+                            </div>
+                            
+                
+                            <div class="form-field">
+                                <label class="form-label visually-hidden" for="user-phone"></label>
+                                <input class="form-input" type="tel" id="user-phone" name="user-phone" placeholder="Phone number"/>
+                            </div>
+                            
+                
+                            <div class="form-field">
+                                <label class="form-label visually-hidden" for="user-email"></label>
+                                <input class="form-input" type="email" id="user-email" name="user-email" placeholder="Email"/>
+                            </div>
+                
+                            
+                
+                            <button class="form-cta cta" type="button">Order a call</button>
+                            <p class="form-terms">By clicking this button I agree with <a class="form-link" href="#">privacy policy</a></p>
+                        </form>
                     </div>
                     
                     <iframe class="find_us-map"
@@ -250,5 +277,56 @@
         </div>
         
     </footer>
+
+<div class="backdrop">
+    <div class="modal">
+        <button class="modal-btn-close" type="button">Close</button>
+        <h2 class="modal-header">Order a <span class="accent-paragraphs">call</span></h2>
+        <p>Leave an application and our specialist will contact you!</p>
+        <form name="modal-form" autocomplete="off">
+
+            <div class="form-field">
+                <label class="form-label visually-hidden" for="user-name"></label>
+                <input class="form-input" type="text" id="user-name" name="user-name" placeholder="Name" required>
+            </div>
+            
+
+            <div class="form-field">
+                <label class="form-label visually-hidden" for="user-phone"></label>
+                <input class="form-input" type="tel" id="user-phone" name="user-phone" placeholder="Phone number" required/>
+            </div>
+            
+
+            <div class="form-field">
+                <label class="form-label visually-hidden" for="user-email"></label>
+                <input class="form-input" type="email" id="user-email" name="user-email" placeholder="Email" required/>
+            </div>
+
+            
+            <!--<div class="checkbox">
+                <input
+                    class="checkbox-input visually-hidden"
+                    type="checkbox"
+                    id="terms-conditions"
+                    name="terms-conditions"
+                />
+                <label class="checkbox-label" for="terms-conditions">
+                    I agree to privacy policy
+                </label>
+            </div>-->
+
+
+            <button class="form-cta cta" href="#" type="submit">Order a call</button>
+            <p class="form-terms">By clicking this button I agree with <a class="form-link" href="#">privacy policy</a></p>
+        </form>
+
+    </div>
+
+</div>
+</div>
+
+
+<script src="./js/modal.js"></script>
+
 </body>
 </html>
