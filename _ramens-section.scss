@@ -1,0 +1,40 @@
+.ramens-section {
+    &__title {
+        text-align: center;
+        margin: 0 auto 80px;
+    }
+    
+    &__slider {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+    }
+
+    &__container {
+        overflow: hidden;
+    }
+    
+    
+    &__list {
+        display: flex;
+        gap: 20px;
+    }
+
+    &__listt {
+        margin-bottom: 32px;
+    }
+
+    &__button {
+        display: none;
+
+        @media screen and (min-width: $bp-tablet) {
+            display: flex;
+        }
+    }
+}
+
+.menu-text {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--not-white-color);
+}

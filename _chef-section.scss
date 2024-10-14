@@ -1,0 +1,55 @@
+.chef-section {
+    &__title {
+        margin: 0 auto 24px;
+        position: relative;
+        gap: 30px;
+
+        @media screen and (min-width: $bp-dekstop) {
+            margin-bottom: 80px;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 20px;
+
+        @media screen and (min-width: $bp-tablet){
+            flex-basis: calc(100% - 30px / 2);
+            gap: 40px 30px;
+        }
+    }
+
+    &__item {
+        @media screen and (min-width: $bp-tablet){
+            flex-direction: row;
+            flex-basis: calc(100% - 30px / 2);
+        }
+        
+    }
+}
+
+.chef-section__title::before,
+.chef-section__title::after {
+    display: none;
+    position: absolute;
+    bottom: 24px;
+    width: 352px;
+    height: 2px;
+    border: 2px solid #000;
+    content: '';
+    border-radius: 9px;
+
+    @media screen and (min-width: $bp-dekstop) {
+        display: block;
+    }
+}
+
+.chef-section__title::before {
+    left: 0;
+}
+
+.chef-section__title::after {
+    right: 0;
+}

@@ -1,0 +1,27 @@
+.carousel-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid;
+    cursor: pointer;
+    flex-shrink: 0;
+
+    &__arrow {
+        fill: black;
+        width: 32px;
+        height: 32px;
+    }
+
+    &:hover {
+        background-color: #000;
+    }
+
+    &.next {
+        transform: rotate(180deg);
+    }
+}

@@ -1,0 +1,46 @@
+.quality-title{
+    margin-bottom: 42px;
+}
+
+
+.quality-section {
+    padding-top: 40px;
+    gap: 100px;
+
+    @media screen and (min-width: $bp-tablet) {
+        padding-top: 96px;
+        display: block;
+    }
+
+
+    &__container{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        gap: 40px;
+    }
+
+    &__content {
+        max-width: 710px;
+    }
+
+    &__text
+        &--limited{
+            max-width: 340px;
+    }
+
+    &__image {
+        display: none;
+        border-radius: 9px;
+
+        @media screen and (min-width: $bp-tablet) {
+            display: block;
+        }
+    }
+
+    
+}
+
+.quality-content {
+    max-width: 710px;
+}
