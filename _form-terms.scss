@@ -1,0 +1,22 @@
+.form-terms {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: center;
+    max-width: 200px;
+    margin: 0 auto;
+
+    &__link {
+        color: var(--accent-color);
+        text-decoration: none;
+        transition: all 0.2s;
+    }
+
+    &__link:hover {
+        color: var(--not-white-color);
+        background-color: var(--accent-color);
+        border-radius: 5px;
+        font-size: 15px;
+        font-weight: bolder;
+    }
+}

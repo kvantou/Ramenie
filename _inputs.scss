@@ -1,0 +1,43 @@
+.input{
+    position: relative;
+
+    &__label {
+        position: absolute;
+        top: 16px;
+        left: 42px;
+    }
+
+    &__control{
+        padding: 16px 42px;
+        width: 100%;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 1.17;
+        border: 3px solid var(--light-dark-color);
+        border-radius: 9px;
+        background-color: transparent;
+        color: black; /*Ensures typed text is black*/
+    
+        &:focus{
+            border-color: var(--accent-color);
+            outline: none;
+        }
+    
+        &::placeholder {
+            color: var(--light-dark-color);/*Placeholder color when input is not focused*/
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 1.17;
+        }
+        
+        &:focus::placeholder{
+            color: var(--accent-color);/*Placeholder color when input is focused*/
+        }
+    }
+}
+
+
+
+/*.form-input:focus + .form-label {
+    transform: translate(-36px, -40px);
+}*/
