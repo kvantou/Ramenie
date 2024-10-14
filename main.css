@@ -1,0 +1,844 @@
+@charset "UTF-8";
+/*_______________________Global settings_____________________________________*/
+:root {
+  --accent-color: #537891;
+  --background-color: #FCF3CA;
+  --not-white-color: #fff5ea;
+  --light-dark-color: rgb(174, 174, 174);
+}
+
+@font-face {
+  font-family: "Japenese_3015";
+  src: url(/fonts/Japanese_3017.ttf);
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Global settings for body*/
+body {
+  background-color: #FCF3CA;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: normal;
+  margin: 0;
+}
+
+/*Global settings for margin*/
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+}
+
+a {
+  font-style: normal;
+}
+
+/*Global settings for header*/
+header {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 32px;
+  position: absolute;
+}
+header .header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+
+.header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  gap: 40px;
+}
+
+.header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 64px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.section {
+  padding: 100px 0px;
+}
+
+/* Global settings for all lists*/
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1470px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/*Global settings for all paragraphs*/
+p {
+  /* text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.20); */
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  font-size: 18px;
+}
+
+/*Global settings for all accent pieces of text in paragraphs*/
+.accent-paragraphs {
+  color: var(--accent-color);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/*__________________________Elements settings_________________________________*/
+/*________________________________Main section_________________________*/
+.cta {
+  padding: 16px 32px;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--accent-color);
+  border-radius: 9px;
+  color: var(--not-white-color);
+  cursor: pointer;
+  border: 3px solid var(--accent-color);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  font-style: normal;
+}
+
+.cta:hover {
+  background-color: transparent;
+  text-shadow: none;
+  font-weight: 700;
+}
+
+/*Settings for main header menu*/
+.menu-elements {
+  color: var(--not-white-color);
+  text-decoration: none;
+  font-weight: 700;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  font-style: normal;
+  line-height: normal;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.menu-elements:hover {
+  color: var(--accent-color);
+  text-shadow: none;
+}
+
+/*Settings for main title section*/
+.main-title-section {
+  padding-top: 538px;
+  padding-right: 0px;
+  padding-bottom: 500px;
+  padding-left: 0px;
+  margin-bottom: 0px;
+  background-image: linear-gradient(102.76deg, rgba(18, 18, 17, 0.78) 2.03%, rgba(18, 18, 17, 0.6) 58.46%, rgba(18, 18, 17, 0) 90.36%), url("../images/header-background.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Settings for the main headline*/
+h1 {
+  color: #fff5ea;
+  font-family: "Japenese_3015";
+  font-size: 163px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase; /*Caps lock for text*/
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  margin-bottom: 0;
+}
+
+/*Settings for the ending 'ei' in h1*/
+.main-title span {
+  color: #537891;
+  font-family: "Japenese_3015";
+  font-size: 163px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+/*_________________________Small advantage section______________________ */
+.header-advantages-section {
+  background-color: var(--accent-color);
+  padding: 16px 0;
+}
+
+.header-advantages-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 40px;
+}
+
+.advantages-title {
+  margin-bottom: 42px;
+}
+
+/*Settings for menu elements in the bottom of the title page*/
+.advantages-elements {
+  background-color: var(--accent-color);
+  color: #000;
+  font-weight: 700;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  color: var(--background-color);
+}
+
+.advantages-section {
+  padding-top: 96px;
+  gap: 100px;
+}
+
+.advantages-text .limited {
+  max-width: 340px;
+}
+
+.advantages-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 40px;
+}
+
+.advantages-content {
+  max-width: 710px;
+}
+
+/*Global settings for the all pages' hedlines*/
+.section-headline {
+  color: #000;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  font-family: "Japenese_3015";
+  font-weight: 700;
+  font-size: 70px;
+}
+
+.section-headline.centered {
+  text-align: center;
+}
+
+/*Settings for accent in all pages' headlines*/
+.section-headline span {
+  color: var(--accent-color);
+}
+
+/* ______________________________Chief section_______________________________________*/
+.chef-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 40px 30px;
+}
+
+.chef-item {
+  -ms-flex-preferred-size: calc(100% - 15px);
+      flex-basis: calc(100% - 15px);
+}
+
+.chef-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.chef-title {
+  margin: 0 auto 80px;
+  position: relative;
+}
+
+.chef-title::before,
+.chef-title::after {
+  position: absolute;
+  bottom: 24px;
+  width: 352px;
+  height: 2px;
+  border: 2px solid #000;
+  content: "";
+  border-radius: 9px;
+}
+
+.chef-title::before {
+  left: 0;
+}
+
+.chef-title::after {
+  right: 0;
+}
+
+.chef-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 40px 30px;
+}
+
+.chef-text p {
+  margin-bottom: 24px;
+}
+
+.chef-text p:last-child {
+  margin-bottom: 0;
+}
+
+.chef-images {
+  border-radius: 4px 4px 4px 100px;
+  -webkit-box-shadow: -16px 16px 0 0 var(--background-color), -16px 16px 0 2px black;
+          box-shadow: -16px 16px 0 0 var(--background-color), -16px 16px 0 2px black;
+  width: 380px;
+  height: 400px;
+}
+
+/*Settings for the names of suchi chiefs*/
+.chef-names {
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+  margin-bottom: 16px;
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+/* ____________________________Ramen types section______________________ */
+.ramens-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.ramens-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.ramen-card {
+  height: 444px;
+  padding: 24px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(55.21%, rgba(49, 38, 26, 0)), color-stop(72.92%, rgba(49, 38, 26, 0.71)), to(#31261a));
+  background-image: linear-gradient(180deg, rgba(49, 38, 26, 0) 55.21%, rgba(49, 38, 26, 0.71) 72.92%, #31261a 100%);
+  border: 1px solid var(--light-dark-color);
+  border-radius: 16px;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.ramen-card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.ramens-title {
+  margin-bottom: 80px;
+}
+
+.ramen-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.ramens-item {
+  -ms-flex-preferred-size: calc((100% - 40px) / 3);
+      flex-basis: calc((100% - 40px) / 3);
+}
+
+/*_________________Carousel____________*/
+.carousel-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid;
+  cursor: pointer;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.carousel-button:hover {
+  background-color: #000;
+}
+
+.carousel-button.next {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.carousel-arrow {
+  fill: black;
+  width: 32px;
+  height: 32px;
+}
+
+.menu-text {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* ____________________________Contact section__________________________ */
+.find_us-section {
+  padding-bottom: 96px;
+}
+
+.find_us-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 32px;
+}
+
+.find_us-map {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border: none;
+  border-radius: 9px;
+}
+
+.contact-title {
+  margin-bottom: 16px;
+}
+
+/* ___________________________Footer___________________________________ */
+/*Settings for the footer menu elements*/
+.footer {
+  padding: 32px 0;
+}
+
+.footer-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  gap: 20px;
+  margin-right: 166px;
+}
+
+.footer-menu,
+.footer-logo {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-top: 10px;
+}
+
+.address-list,
+.address-info {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.footer-address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.footer-elements {
+  color: var(--not-white-color);
+  font-weight: 700;
+  text-decoration: none;
+  line-height: normal;
+  font-style: normal;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.footer-elements:hover {
+  color: var(--accent-color);
+  background-color: var(--background-color);
+  border-radius: 5px;
+  font-size: 120%;
+  font-weight: bolder;
+  text-shadow: none;
+}
+
+/*Settings for contacts in footer*/
+.contacts-elements {
+  color: var(--not-white-color);
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 450;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.contacts-elements:hover {
+  font-size: 17px;
+  font-weight: bolder;
+  color: var(--accent-color);
+  background-color: var(--background-color);
+  border-radius: 5px;
+}
+
+.contacts-icon {
+  fill: var(--not-white-color);
+}
+
+.contacts-icon:hover {
+  fill: var(--accent-color);
+  background-color: var(--background-color);
+  border-radius: 5px;
+  stroke: var(--accent-color);
+}
+
+/*Settings for privacy policy text*/
+.privacy-policy {
+  color: var(--not-white-color);
+  text-decoration: none;
+  font-weight: 450;
+}
+
+.privacy-policy:hover {
+  color: var(--accent-color);
+  background-color: var(--background-color);
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: bolder;
+  text-shadow: none;
+}
+
+.rights-reserved {
+  color: var(--not-white-color);
+}
+
+.footer {
+  background-image: url("../images/footer-background.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer::before,
+.footer::after {
+  position: absolute;
+  background-image: url("../images/footer-chopsticks.png");
+  content: "";
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-position: left bottom;
+  z-index: 1;
+}
+
+.footer::before {
+  width: 150px;
+  height: 150px;
+  background-size: 300px 300px;
+  left: -35px;
+  bottom: -30px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.footer::after {
+  width: 200px;
+  height: 200px;
+  background-size: 300px 300px;
+  right: -60px;
+  bottom: -10px;
+}
+
+/*Modal window*/
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+  -webkit-transition: opacity 0.3s, visibility 0.3s;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.modal {
+  width: 100%;
+  max-width: 880px;
+  height: 100%;
+  max-height: 880px;
+  background-color: var(--background-color);
+  border-radius: 32px;
+  padding: 128px;
+  position: relative;
+  overflow: auto;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-header {
+  font-family: "Japenese_3015";
+  font-size: 70px;
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+
+/*_______________________Form in modal window__________________________*/
+.form-field {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.form-label {
+  position: absolute;
+  top: 16px;
+  left: 42px;
+}
+
+/*.form-input:focus + .form-label {
+    transform: translate(-36px, -40px);
+}*/
+.form-input {
+  padding: 16px 42px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.17;
+  border: 3px solid var(--light-dark-color);
+  border-radius: 9px;
+  background-color: transparent;
+  color: black; /*Ensures typed text is black*/
+}
+
+.form-input:focus {
+  border-color: var(--accent-color);
+  outline: none;
+}
+
+.form-input::-webkit-input-placeholder {
+  color: var(--light-dark-color); /*Placeholder color when input is not focused*/
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.form-input::-moz-placeholder {
+  color: var(--light-dark-color); /*Placeholder color when input is not focused*/
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.form-input:-ms-input-placeholder {
+  color: var(--light-dark-color); /*Placeholder color when input is not focused*/
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.form-input::-ms-input-placeholder {
+  color: var(--light-dark-color); /*Placeholder color when input is not focused*/
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.form-input::placeholder {
+  color: var(--light-dark-color); /*Placeholder color when input is not focused*/
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.17;
+}
+
+.form-input:focus::-webkit-input-placeholder {
+  color: var(--accent-color); /*Placeholder color when input is focused*/
+}
+
+.form-input:focus::-moz-placeholder {
+  color: var(--accent-color); /*Placeholder color when input is focused*/
+}
+
+.form-input:focus:-ms-input-placeholder {
+  color: var(--accent-color); /*Placeholder color when input is focused*/
+}
+
+.form-input:focus::-ms-input-placeholder {
+  color: var(--accent-color); /*Placeholder color when input is focused*/
+}
+
+.form-input:focus::placeholder {
+  color: var(--accent-color); /*Placeholder color when input is focused*/
+}
+
+.form-cta {
+  display: block;
+  margin: 0 auto 24px;
+  padding: 18px 37px;
+  font-size: 18px;
+}
+
+.form-cta:hover {
+  color: #000;
+  font-weight: 700;
+  background-color: transparent;
+}
+
+/* :disabled pseudoclass allows you to make any button, input field inactive|boolean attribute*/
+/* :required pseudoclass allows you to arrange the input field and show user that the field is mandatory for submitting*/
+/* :checked pseudoclass usually applies to buttons with type 'radio' and 'checkbox', and allows you to choose only active fields*/
+/* :placeholder-shown applies depends on the 'placeholder' attribute is visible or not*/
+/* :focus-within applies to element when it or other elements inside it/within it get focus*/
+/* class-name:attribute{
+    ....
+}*/
+/*.form-cta:disabled {
+    color: gray;
+    background-color: transparent;
+    border-color: currentColor;
+}*/
+/* pattern - attribute to compare/juxtapos by character data that user typed with some example that pattern attribute will set*/
+/*For example the code for the user name to consist from two words: <input pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$">
+/*For a phone number to have this format +380990001122: <input pattern="^\+[0-9]{12}">  */
+.form-terms {
+  font-size: 12px;
+  font-weight: 500;
+  font-style: 12px;
+  line-height: 1.5;
+  text-align: center;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.form-link {
+  color: var(--accent-color);
+  text-decoration: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.form-link:hover {
+  color: var(--not-white-color);
+  background-color: var(--accent-color);
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bolder;
+  text-shadow: none;
+  text-decoration: none;
+}
+
+/*.checkbox{
+    position: relative;
+}
+
+.checkbox-input {
+    appearance: none;
+}
+
+.checkbox-input:checked + .checkbox-label::before {
+    background-color: #000;
+}
+
+.checkbox-label {
+    padding-left: 24px;
+}
+
+.checkbox-label::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 2px;
+    content: '';
+}*/
+
+/*# sourceMappingURL=main.css.map */
