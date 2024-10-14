@@ -1,0 +1,18 @@
+:root{
+    --accent-color: #537891;
+    --background-color: #FCF3CA;
+    --not-white-color: #fff5ea;
+    --light-dark-color: rgb(174, 174, 174);
+}
+
+/*break points for adaptation as scss variables
+(dollar sign to state scss variable) for different screen sizes*/
+
+/*There are 2 strategies for adaptation. Dekstop First - when css and scss
+styles were created for dekstop and later during the adaptation process adaptated for mobile.
+And vise versa - Mobile First. Firstly all styles created for mobile and later adapted to dekstop*/
+
+
+$bp-mobile: 480px;
+$bp-tablet: 768px;
+$bp-dekstop: 1280px;

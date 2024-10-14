@@ -1,0 +1,12 @@
+/*Global settings for all accent pieces of text in paragraphs*/
+.accent-paragraphs {
+    color: var(--accent-color);
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/*Settings for accent in all pages' headlines*/
+.accent-headers{
+    color: var(--accent-color);
+    
+}
