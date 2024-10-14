@@ -4,64 +4,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ramenie</title>
-    <link rel="stylesheet" href="./css/styles.css"/>
-    
+    <link rel="stylesheet" href="./scss/main.min.css "/>
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
         
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="container">
-            <div class="header-container">
-                <nav class="header-nav">
+            <div class="header__container">
+                <nav class="header__nav">
                     <a href="./index.html">
                         <img class="logo-image" src="images/logo_footer.png" alt="Ramenie logo header" width="165" height="70"/>
                     </a>
-                    <ul class="header-menu">
-                        <li><a class="menu-elements" href="#advantages-section">Advantages</a></li=>
-                        <li><a class="menu-elements" href="#cheef-section">Our ryori suru</a></li>
-                        <li><a class="menu-elements" href="#menu-section">Menu</a></li>
-                        <li><a class="menu-elements" href="#find_us-section">Where are we located?</a></li>
-                        <li><a class="menu-elements" href="#contacts">Contacts</a></li>
+                    <ul class="header__menu">
+                        <li><a class="link" href="#advantages-section">Advantages</a></li=>
+                        <li><a class="link" href="#cheef-section">Our ryori suru</a></li>
+                        <li><a class="link" href="#menu-section">Menu</a></li>
+                        <li><a class="link" href="#find_us-section">Where are we located?</a></li>
+                        <li><a class="link" href="#contacts">Contacts</a></li>
                     </ul>
                 </nav>
                 
-                <button class="cta modal-btn-open" type="button">Order a call</button>
+                <button class="header__cta cta modal-btn-open" type="button">Order a call</button>
+                <button class="header__burger menu-btn-open">
+                    <img src="./images/menu_header.png" width="24" height="24">
+
+                </button>
+
+                <div class="mobile-menu">
+                    <button class="mobile-menu__btn-close menu-btn-close" type="button">Close</button>
+                </div>
+
             </div>
-            
         </div>
         
     </header>
     <main>
         <section class="main-title-section">
             <div class="container">
-                <h1 class="main-title">Ramen<span>ie</span>
+                <h1 class="main-title-section__title">Ramen<span class="accent-headers">ie</span>
                 </h1>
+                <button class="main-title-section__cta cta modal-btn-open" type="button">Order a call</button>
             </div>
         </section>
 
-        <section class="header-advantages-section">
+        <section class="advantages-section">
             <div class="container">
                 <h2 class="visually-hidden">Our advantages</h2>
-                <ul class="header-advantages-list">
-                    <li class="advantages-elements">Amazing cooking time</li>
-                    <li class="advantages-elements">True spirit of Japan culture</li>
-                    <li class="advantages-elements">Smth</li>
+                <ul class="advantages-section__list">
+                    <li class="advantages-section__elements">Amazing cooking time</li>
+                    <li class="advantages-section__elements">True spirit of Japan culture</li>
+                    <li class="advantages-section__elements">Smth</li>
                 </ul>
             </div>
         </section>
 
-        <section class="advantages-section" id="advantages-section">
+        <section class="quality-section section" id="quality-section">
             <div class="container">
-                <div class="advantages-container">
-                    <div class="advantages-content">
-                        <h2 class="advantages-title section-headline">New level of quality</h2>
-                        <p class="advantages-text"><span class="accent-paragraphs">
+                <div class="quality-section__container">
+                    <div class="quality__content">
+                        <h2 class="quality-title section__headline"><span class="accent-headers">New</span> level of quality</h2>
+                        <p class="quality__text"><span class="accent-paragraphs">
                             Lorem ipsum</span>
                             dolor sit amet consectetur adipisicing elit.
                             Ipsam laboriosam ut laborum cupiditate ipsum earum.
                         </p>
                     
-                        <p class="advantages-text limited">Lorem ipsum dolor <span>sit amet</span> consectetur,
+                        <p class="quality-section__text quality-section__text--limited">Lorem ipsum dolor <span>sit amet</span> consectetur,
                         adipisicing elit. Suscipit, aliquid! Iusto laudantium velit, natus,
                         et in dolorem deleniti dolores ab tempore sit voluptas atque possimus
                         enim dolor est consequatur esse cum 
@@ -69,157 +81,188 @@
                         </p>
                         
                     </div>
-                    <img src="images/Pic.png" alt="Ramen" height="450px" width="300px" />
+                    <img class="quality-section__image" src="images/Pic.png" srcset="./images/Pic.png 1x, ./images/Pic@2x.jpg 2x" alt="Ramen" height="450px" width="300px" />
                 </div>
                 
             </div>
         </section>
-        <section class="section" id="cheef-section">
+        <section class="chef-section" id="chef-section">
             <div class="container">
-                <h2 class="chef-title section-headline centered">
-                    
+                <h2 class="chef-section__title section__headline centered">
                     Our best <br />
-                    <span >ryori suru</span>
+                    <span class="accent-headers">ryori suru</span>
                 </h2>
-                    
-                <ul class="chef-list">
-                    <li class="chef-item">
+                
+                <ul class="chef-section__list">
+                    <li class="chef-section__item">
                         <article class="chef-card">
-                            <img class="chef-images" src="./images/cherry-image.jpg" alt="cherry ryori suru">
+                            <img class="chef-card__images" src="./images/cherry-image.jpg" alt="cherry ryori suru">
                             <div>
-                                <h3 class="chef-names">Cherry</h3>
-                                <div class="chef-text">
-                                    <p class="chef-text">Lorem, ipsum dolor.</p>
-                
-                                    <p class="chef-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                
-                                    <p class="chef-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate recusandae qui ab?</p>
+                                <h3 class="chef-card__names">Cherry</h3>
+                                <div class="chef-card__text">
+                                    <p class="chef-card__text">Lorem, ipsum dolor.</p>
+                                    <p class="chef-card__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <p class="chef-card__text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate recusandae qui ab?</p>
                                 </div>
-                                
                             </div>
-                            
                         </article>
                     </li>
-                    <li class="chef-item">
+                    <li class="chef-section__item">
                         <article class="chef-card">
-                            <img class="chef-images" src="./images/stephen-image.jpg" alt="stephen ryori suru">
+                            <img class="chef-card__images" src="./images/stephen-image.jpg" alt="stephen ryori suru">
                             <div>
-                                <h3 class="chef-names">Stephen</h3>
-                                <p class="chef-text">
+                                <h3 class="chef-card__names">Stephen</h3>
+                                <p class="chef-card__text">
                                     Lorem ipsum dolor sit.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa, repellendus.
                                 </p>
-                
-                                <p class="chef-text">
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi pariatur perferendis dolorem, officia nisiincidunt!
+                                <p class="chef-card__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi pariatur perferendis dolorem, officia nisi incidunt!
                                 </p>
                             </div>
-                            
                         </article>
                     </li>
                 </ul>
             </div>
-            
         </section>
-        <section class="section" id="menu-section">
+        
+        <section class="ramens-section section" id="menu-section">
             <div class="container">
-                <h2 class="ramens-title section-headline centered">Menu</h2>
-                <div class="ramens-container">
-                    <button class="carousel-button next" type="button">
-                        <svg class="carousel-arrow" width="16" height="16">
+                <h2 class="ramens-section__title section__headline section__headline">Menu</h2>
+                <div class="ramens-section__slider">
+                    <button class="ramens-section__button carousel-button prev" type="button">
+                        <svg class="carousel-button__arrow" width="16" height="16">
                             <use href="./images/sprite.svg#icon-arrow-left"></use>
                         </svg>
                     </button>
-                    <ul class="ramens-list">
-                        <li class="ramens-item">
-                            <article class="ramen-card">
-                                <h3 class="ramen-title">Tonkotsu</h3>
-                                <div class="menu-text">
-                                    <p>Lorem ipsum dolor sit</p>
-                                    <p>Lorem, ipsum dolor.</p>
-                                    <p>
-                                        Lorem ipsum dolor sit amet,
-                                        consectetur adipisicing elit. Tempora, qui.
-                                    </p>
-                                    <p>Lorem, ipsum dolor.</p>
-                                </div>
-                            </article>
-                        </li>
-            
-                        <li class="ramens-item">
-                            <article class="ramen-card">
-                                <h3 class="ramen-title">Miso</h3>
-                                <div class="menu-text">
-                                    <p>Lorem ipsum dolor sit</p>
-                                    <p>Lorem, ipsum dolor.</p>
-                                    <p>
-                                        Lorem ipsum dolor sit amet,
-                                        consectetur adipisicing elit. Tempora, qui.
-                                    </p>
-                                    <p>Lorem, ipsum dolor.</p>
-                                </div>
-                            </article>
-                        </li>
-            
-                        <li class="ramens-item">
-                            <article class="ramen-card">
-                                <h3 class="ramen-title">Shio</h3>
-                                <div class="menu-text">
-                                    <p>Lorem ipsum dolor sit</p>
-                                    <p>Lorem, ipsum dolor.</p>
-                                    <p>
-                                        Lorem ipsum dolor sit amet,
-                                        consectetur adipisicing elit. Tempora, qui.
-                                    </p>
-                                    <p>Lorem, ipsum dolor.</p>
-                                </div>
-                            </article>
-                        </li>
-                    </ul>
-                    <button class="carousel-button" type="button">
-                        <svg class="carousel-arrow" width="32" height="32">
+                    <div class="ramens-section__container swiper-container">
+                        <ul class="ramens-section__listt swiper-wrapper">
+                            <li class="swiper-slide">
+                                <article class="ramens-card">
+                                    <img class="ramens-card__image" src="./images/Tonkotsu.png" alt="Tonkotsu ramen">
+                                    <h3 class="ramens-card__title">Tonkotsu</h3>
+                                    <div class="menu-text">
+                                        <p>Lorem ipsum dolor sit</p>
+                                        <p>Lorem, ipsum dolor.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, qui.</p>
+                                        <p>Lorem, ipsum dolor.</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="swiper-slide">
+                                <article class="ramens-card">
+                                    <img class="ramens-card__image" src="./images/Miso.jpg" alt="Miso ramen">
+                                    <h3 class="ramens-card__title">Miso</h3>
+                                    <div class="menu-text">
+                                        <p>Lorem ipsum dolor sit</p>
+                                        <p>Lorem, ipsum dolor.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, qui.</p>
+                                        <p>Lorem, ipsum dolor.</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="swiper-slide">
+                                <article class="ramens-card">
+                                    <img class="ramens-card__image" src="./images/Shio.png" alt="Shio ramen">
+                                    <h3 class="ramens-card__title">Shio</h3>
+                                    <div class="menu-text">
+                                        <p>Lorem ipsum dolor sit</p>
+                                        <p>Lorem, ipsum dolor.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, qui.</p>
+                                        <p>Lorem, ipsum dolor.</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="swiper-slide">
+                                <article class="ramens-card">
+                                    <img class="ramens-card__image" src="./images/Tonkotsu.png" alt="Tonkotsu ramen">
+                                    <h3 class="ramens-card__title">Tonkotsu</h3>
+                                    <div class="menu-text">
+                                        <p>Lorem ipsum dolor sit</p>
+                                        <p>Lorem, ipsum dolor.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, qui.</p>
+                                        <p>Lorem, ipsum dolor.</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="swiper-slide">
+                                <article class="ramens-card">
+                                    <img class="ramens-card__image" src="./images/Miso.jpg" alt="Miso ramen">
+                                    <h3 class="ramens-card__title">Miso</h3>
+                                    <div class="menu-text">
+                                        <p>Lorem ipsum dolor sit</p>
+                                        <p>Lorem, ipsum dolor.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, qui.</p>
+                                        <p>Lorem, ipsum dolor.</p>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="swiper-slide">
+                                <article class="ramens-card">
+                                    <img class="ramens-card__image" src="./images/Shio.png" alt="Shio ramen">
+                                    <h3 class="ramens-card__title">Shio</h3>
+                                    <div class="menu-text">
+                                        <p>Lorem ipsum dolor sit</p>
+                                        <p>Lorem, ipsum dolor.</p>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, qui.</p>
+                                        <p>Lorem, ipsum dolor.</p>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                        <div class="pagination">
+                            <span class="pagination__button"></button>
+                            <span class="pagination__button"></button>
+                            <span class="pagination__button"></button>
+                            <span class="pagination__button"></button>
+                        </div>
+                    </div>
+                    
+                    <button class="ramens-section__button carousel-button next" type="button">
+                        <svg class="carousel-button__arrow" width="32" height="32">
                             <use href="./images/sprite.svg#icon-arrow-right"></use>
                         </svg>
                     </button>
                 </div>
-                
             </div>
         </section>
+        
+        
 
         <section class="find_us-section section" id="find_us-section">
             <div class="container">
-                <div class="find_us-container">
-                    <div class="find_us-form">
-                        <h2 class="contact-title section-headline">Where are <span class="accent-headers">we</span> located?</h2>
+                <div class="find_us-section__container">
+                    <div class="find_us-section__form">
+                        <h2 class="find_us__title section__headline">Where are <span class="accent-headers">we</span> located?</h2>
                         <p>Fill out the form for us to contact you!</p>
-                        <form  name="contact-form" autocomplete="on" novalidate>
+                        <form class="find_us-form" name="contact-form" autocomplete="on" novalidate>
 
-                            <div class="form-field">
-                                <label class="form-label visually-hidden" for="user-name"></label>
-                                <input class="form-input" type="text" id="user-name" name="user-name" placeholder="Name">
+                            <div class="find_us-section__form-field input">
+                                <label class="input__label visually-hidden" for="user-name"></label>
+                                <input class="input__control" type="text" id="user-name" name="user-name" placeholder="Name">
                             </div>
                             
                 
-                            <div class="form-field">
-                                <label class="form-label visually-hidden" for="user-phone"></label>
-                                <input class="form-input" type="tel" id="user-phone" name="user-phone" placeholder="Phone number"/>
+                            <div class="find_us-section__form-field input">
+                                <label class="input__label visually-hidden" for="user-phone"></label>
+                                <input class="input__control" type="tel" id="user-phone" name="user-phone" placeholder="Phone number"/>
                             </div>
                             
                 
-                            <div class="form-field">
-                                <label class="form-label visually-hidden" for="user-email"></label>
-                                <input class="form-input" type="email" id="user-email" name="user-email" placeholder="Email"/>
+                            <div class="find_us-section__form-field input">
+                                <label class="input__label visually-hidden" for="user-email"></label>
+                                <input class="input__control" type="email" id="user-email" name="user-email" placeholder="Email"/>
                             </div>
                 
                             
                 
-                            <button class="form-cta cta" type="button">Order a call</button>
+                            <button class="find_us-section__cta cta" type="button">Order a call</button>
                             <p class="form-terms">By clicking this button I agree with <a class="form-link" href="#">privacy policy</a></p>
                         </form>
                     </div>
                     
-                    <iframe class="find_us-map"
+                    <iframe class="find_us-section__map"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.662408541776!2d-79.38418570875163!3d43.655191628835986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cbc6edad6e39%3A0x83dc9e8605c5f3f4!2sSansotei%20Ramen!5e0!3m2!1suk!2spl!4v1705093157937!5m2!1suk!2spl"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        style="border:0;" allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                 </div>
@@ -229,44 +272,46 @@
     </main>
     <footer class="footer" id="contacts">
         <div class="container">
-            <div class="footer-container">
-                <nav class="footer-nav">
-                    <div class="footer-logo">
-                        <a class="footer-logo" href="./index.html">
+            <div class="footer__container">
+                <nav class="footer__nav">
+                    <div class="footer__logo">
+                        <a class="footer__logo" href="./index.html">
                             <img class="logo-image" src="images/logo_footer.png" alt="Ramenie logo footer" width="165" height="70"/>
                         </a>
                     </div>
                     
-                    <ul class="footer-menu">
-                        <li><a class="footer-elements" href="#materials-section">Our ryōri suri</a></li>
-                        <li><a class="footer-elements" href="#lines-section">Menu</a></li>
-                        <li><a class="footer-elements" href="#find_us-section">Where are we located?</a></li>
-                        <li><a class="footer-elements" href="#contacts">Contacts</a></li>
+                    <ul class="footer__menu">
+                        <li><a class="footer__elements" href="#materials-section">Our ryōri suri</a></li>
+                        <li><a class="footer__elements" href="#lines-section">Menu</a></li>
+                        <li><a class="footer__elements" href="#find_us-section">Where are we located?</a></li>
+                        <li><a class="footer__elements" href="#contacts">Contacts</a></li>
                 
                     </ul>
                 </nav>
-                <address class="footer-address">
-                    <ul class="address-list">
-                        <li><a class="contacts-elements" href="tel:+38000000000000">+1000 000 000</a></li>
-                        <li><a class="contacts-elements" href="mailto:some@gmail.com">some@gmail.com</a></li>
-                        <li><a class="contacts-elements" href="https://maps.app.goo.gl/iYHcoLP1JXv25BU6A" target="_blank">
-                                Canada, Toronto, str. Harbour 69</a></li>
-                        <li>
+                <address class="footer__address">
+                    <div class="footer__address-contacts">
+                        <ul class="footer__address-list">
+                            <li><a class="footer__contacts-elements" href="tel:+38000000000000">+1000 000 000</a></li>
+                            <li><a class="footer__contacts-elements" href="mailto:some@gmail.com">some@gmail.com</a></li>
+                            <li><a class="footer__contacts-elements" href="https://maps.app.goo.gl/iYHcoLP1JXv25BU6A" target="_blank">
+                                    Canada, Toronto, str. Harbour 69</a></li>
+                            
+                        </ul>
+    
+                        <div>
                             <a href="#">
                                 <svg class="contacts-icon" width="32" height="32">
                                     <use href="./images/sprite.svg#icon-x-icon"></use>
                                 </svg>
                             </a>
-                        </li>
-                        <li>
                             <a href="#">
                                 <svg class="contacts-icon" width="32" height="32">
                                     <use href="./images/sprite.svg#icon-instagram"></use>
                                 </svg>
                             </a>
-                        </li>
-                    </ul>
-                    <div class="address-info">
+                        </div>
+                    </div>
+                    <div class="footer__address-info">
                         <a class="privacy-policy" href="#" target="_blank">Privacy policy</a>
                         <p class="rights-reserved">&copy;2024 Rights reserved</p>
                     </div>
@@ -278,28 +323,29 @@
         
     </footer>
 
-<div class="backdrop">
+<div class="backdrop visually-hidden">
     <div class="modal">
-        <button class="modal-btn-close" type="button">Close</button>
-        <h2 class="modal-header">Order a <span class="accent-paragraphs">call</span></h2>
+        <button class="modal__btn-close modal-btn-close" type="button">Close</button>
+        <h2 class="modal__header">Order a <span class="accent-paragraphs">call</span></h2>
         <p>Leave an application and our specialist will contact you!</p>
         <form name="modal-form" autocomplete="off">
 
-            <div class="form-field">
-                <label class="form-label visually-hidden" for="user-name"></label>
-                <input class="form-input" type="text" id="user-name" name="user-name" placeholder="Name" required>
+            <div class="modal__form-field input">
+                <label class="input__label visually-hidden" for="user-name">Name</label>
+                <input class="input__control" type="text" id="user-name" name="user-name" placeholder="Name" required>
+            </div>
+            
+            
+
+            <div class="modal__form-field input">
+                <label class="input__label visually-hidden" for="user-phone"></label>
+                <input class="input__control" type="tel" id="user-phone" name="user-phone" placeholder="Phone number" required/>
             </div>
             
 
-            <div class="form-field">
-                <label class="form-label visually-hidden" for="user-phone"></label>
-                <input class="form-input" type="tel" id="user-phone" name="user-phone" placeholder="Phone number" required/>
-            </div>
-            
-
-            <div class="form-field">
-                <label class="form-label visually-hidden" for="user-email"></label>
-                <input class="form-input" type="email" id="user-email" name="user-email" placeholder="Email" required/>
+            <div class="modal__form-field input">
+                <label class="input__label visually-hidden" for="user-email"></label>
+                <input class="input__control" type="email" id="user-email" name="user-email" placeholder="Email" required/>
             </div>
 
             
@@ -316,8 +362,8 @@
             </div>-->
 
 
-            <button class="form-cta cta" href="#" type="submit">Order a call</button>
-            <p class="form-terms">By clicking this button I agree with <a class="form-link" href="#">privacy policy</a></p>
+            <button class="modal__cta cta" href="#" type="submit">Order a call</button>
+            <p class="form-terms">By clicking this button I agree with <a class="form-terms__link" href="#">privacy policy</a></p>
         </form>
 
     </div>
@@ -327,6 +373,9 @@
 
 
 <script src="./js/modal.js"></script>
+<script src="./js/mobile-menu.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./js/ramens-slider.js"></script>
 
 </body>
 </html>
