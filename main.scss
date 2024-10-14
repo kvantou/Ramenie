@@ -1,0 +1,154 @@
+/*_______________________Global settings_____________________________________*/
+
+@import './utils/variables';
+@import './utils/fonts';
+
+@import './base';
+
+@import './utils/utils';
+
+@import './utils/accents';
+
+
+
+
+
+
+
+/*__________________________Elements settings_________________________________*/
+
+
+/*________________________________Main section_________________________*/
+@import './components/cta';
+
+
+
+/*Settings for main header menu*/
+@import './components/link';
+
+@import './layouts/header';
+
+@import './layouts/mobile-menu';
+
+/*Settings for main title section*/
+@import './layouts/main-title-section';
+
+/* Settings for the main headline*/
+
+
+/*_________________________Small advantage section______________________ */
+@import './layouts/quality-section';
+
+@import './layouts/advantages-section';
+
+/*Settings for menu elements in the bottom of the title page*/
+
+
+
+
+/* ______________________________Chief section_______________________________________*/
+
+@import './layouts/chef-section';
+
+@import './layouts/chef-card';
+
+@import './utils/mixins';
+
+/*How to use mixins
+There is a file called "_mixins.scss" where settings are declared->
+.circle {
+    @include circle(100px, 100px, white);
+}
+
+.circle-big {
+    @include circle(200px, 200px, green);
+}
+
+.circle-small {
+    @include circle(200px, 200px, green);
+}
+*/
+/* ____________________________Ramen types section______________________ */
+
+@import './layouts/ramens-section.scss';
+
+@import './layouts/ramens-card';
+
+@import './layouts/ramens-button';
+
+@import './components/pagination';
+
+
+/*_________________Carousel____________*/
+
+
+
+/* ____________________________Contact section__________________________ */
+
+@import './layouts/contact-section';
+
+
+
+/* ___________________________Footer___________________________________ */
+@import './layouts/footer';
+
+/*Modal window*/
+
+@import './components/modal-window';
+
+/*_______________________Form in modal window__________________________*/
+
+@import './components/form-terms';
+@import './components/inputs';
+
+/* :disabled pseudoclass allows you to make any button, input field inactive|boolean attribute*/
+/* :required pseudoclass allows you to arrange the input field and show user that the field is mandatory for submitting*/
+/* :checked pseudoclass usually applies to buttons with type 'radio' and 'checkbox', and allows you to choose only active fields*/
+/* :placeholder-shown applies depends on the 'placeholder' attribute is visible or not*/
+/* :focus-within applies to element when it or other elements inside it/within it get focus*/
+
+
+
+/* class-name:attribute{
+    ....
+}*/
+
+/*.form-cta:disabled {
+    color: gray;
+    background-color: transparent;
+    border-color: currentColor;
+}*/
+
+/* pattern - attribute to compare/juxtapos by character data that user typed with some example that pattern attribute will set*/
+/*For example the code for the user name to consist from two words: <input pattern="^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$">
+/*For a phone number to have this format +380990001122: <input pattern="^\+[0-9]{12}">  */
+
+
+
+/*.checkbox{
+    position: relative;
+}
+
+.checkbox-input {
+    appearance: none;
+}
+
+.checkbox-input:checked + .checkbox-label::before {
+    background-color: #000;
+}
+
+.checkbox-label {
+    padding-left: 24px;
+}
+
+.checkbox-label::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    margin-top: 5px;
+    border: 1px solid black;
+    border-radius: 2px;
+    content: '';
+}*/

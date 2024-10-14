@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+/* Global settings for body*/
+body {
+    background-color: #FCF3CA;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: normal;
+    margin: 0;
+
+    @media screen and (min-width: $bp-tablet) {
+        font-size: 18px;
+        font-weight: 400;
+    }
+}
+
+/*Global settings for margin*/
+h1, h2, h3, h4, h5, h6, p{
+    margin-top: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+a{
+    font-style: normal;
+}
+
+
+.container{
+    width: 100%;
+    max-width: 1470px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+
+
+
+
+
+p {
+    /* text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.20); */
+    font-weight: 400;
+    font-style: normal;
+    line-height: normal;
+    font-size: 18px;
+}
+
+/* Global settings for all lists*/
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.section{
+    padding: 20px 0px;
+
+    @media screen and (min-width: $bp-tablet) {
+        padding: 40px 0;
+    }
+
+
+
+    /*Global settings for the all pages' headlines*/
+    &__headline {
+        color: #000;
+        text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.20);
+        font-family: 'Japenese_3015';
+        font-weight: 700;
+        font-size: 48px;
+
+        @media screen and (min-width: $bp-tablet) {
+            font-size: 70px;
+        }
+
+        
+    }
+}
+
+
+
+
+.section__headline.centered {
+    text-align: center;
+}
+
