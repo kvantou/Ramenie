@@ -8,6 +8,6 @@ Lending web page "Ramenie" - ramen restaurant.
 
 Other images were generated with Microsoft 365 image generator, AI Comic Factory and other AI text to image generators.
 
-The services, technologies used:
+Services, technologies used:
   - Swiper (https://swiperjs.com/)
   - IcoMoon (https://icomoon.io/)
